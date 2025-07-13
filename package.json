@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "my-video-saas",
   "private": true,
   "scripts": {
     "build": "turbo run build",
