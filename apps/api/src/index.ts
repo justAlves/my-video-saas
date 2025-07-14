@@ -1,9 +1,10 @@
 import { Elysia } from "elysia";
 import { authController } from "./modules/auth";
-import cors from "@elysiajs/cors";
+import { cors } from "@elysiajs/cors";
 import { userController } from "./modules/user";
 import { uploadController } from "./modules/upload";
 import { notificationsController } from "./modules/notifications";
+import { swagger } from "@elysiajs/swagger"
 
 const app = 
   new Elysia()
@@ -12,6 +13,16 @@ const app =
       methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
       credentials: true,
       allowedHeaders: ["Content-Type", "Authorization"],
+  }))
+  .use(swagger({
+    documentation: {
+      info: {
+        title: "Vixy API Documentation",
+        version: "1.0.0",
+        description: "This is the API documentation for the Vixy backend services."
+      },
+      
+    }
   }))
   .use(authController)
   .use(userController)
