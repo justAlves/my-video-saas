@@ -9,7 +9,7 @@ import { swagger } from "@elysiajs/swagger"
 const app = 
   new Elysia()
   .use(cors({
-      origin: "http://localhost:5173", // Your frontend URL
+      origin: ["http://localhost:5173", "https://nixy-chi.vercel.app"], // Your frontend URL
       methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
       credentials: true,
       allowedHeaders: ["Content-Type", "Authorization"],

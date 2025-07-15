@@ -26,7 +26,7 @@ export const auth = betterAuth({
     organization({
       sendInvitationEmail: async ({ id, email, inviter, organization }) => {
         try {
-          const inviteLink = `http://localhost:5173/invite/${id}`;
+          const inviteLink = `${process.env.FRONTEND_URL!}/invite/${id}`;
 
           const html = InvitationTemplate(organization.name, organization.id, inviter.user.name, inviteLink);
 
@@ -47,7 +47,7 @@ export const auth = betterAuth({
   ], 
   trustedOrigins: [
     "http://localhost:5173", // Your frontend URL
-    "https://your-production-domain.com" // Your production URL
+    "https://nixy-chi.vercel.app" // Your production URL
   ],
 
 });
