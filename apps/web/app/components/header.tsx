@@ -1,7 +1,11 @@
+import useGetUser from '@/hooks/use-getuser';
 import { VideoIcon } from 'lucide-react'
 import React, { useEffect } from 'react'
 
 export default function Header() {
+
+  const { data } = useGetUser();
+
   return (
     <header
       className='px-8 py-4 border-b w-full flex justify-between items-center'

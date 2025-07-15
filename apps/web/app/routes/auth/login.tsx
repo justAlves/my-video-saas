@@ -58,9 +58,8 @@ export default function LoginPage(){
     try {
       await signIn.social({
         provider: "google",
-        callbackURL: "/"
+        callbackURL: `${process.env.FRONTEND_URL!}/`
       });
-      navigate("/");
     } catch (error) {
       toast("Tivemos um erro ao tentar fazer login com o Google, tente novamente.");
     } finally {
