@@ -22,6 +22,7 @@
     "packages/*"
   ],
   "dependencies": {
+    "@guialves/tuple": "^1.0.0",
     "axios": "^1.10.0"
   }
 }

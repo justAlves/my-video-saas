@@ -12,6 +12,7 @@ import "./app.css";
 import { ThemeProvider } from "./components/theme-provider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "./components/ui/sonner";
+import { queryClient } from "./lib/queryclient";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -43,8 +44,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
     </html>
   );
 }
-
-const queryClient = new QueryClient();
 
 export default function App() {
 

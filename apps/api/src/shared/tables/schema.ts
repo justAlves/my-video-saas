@@ -1,4 +1,5 @@
 import { account } from "./account.table";
+import { collection } from "./collection.table";
 import { invitation } from "./invitation.table";
 import { member } from "./member.table";
 import { organization } from "./organization.table";
@@ -14,4 +15,5 @@ export const schema = {
   verification,
   session,
   organization,
+  collection
 }

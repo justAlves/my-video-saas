@@ -5,6 +5,7 @@ import { userController } from "./modules/user";
 import { uploadController } from "./modules/upload";
 import { notificationsController } from "./modules/notifications";
 import { swagger } from "@elysiajs/swagger"
+import { collectionsController } from "./modules/collections";
 
 const app = 
   new Elysia()
@@ -28,6 +29,7 @@ const app =
   .use(userController)
   .use(uploadController)
   .use(notificationsController)
+  .use(collectionsController)
   .get("/health", () => "Healthy")
   .listen(3000);
 

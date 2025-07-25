@@ -4,6 +4,7 @@
     "": {
       "name": "my-video-saas",
       "dependencies": {
+        "@guialves/tuple": "^1.0.0",
         "axios": "^1.10.0",
       },
       "devDependencies": {
@@ -36,6 +37,8 @@
     "apps/web": {
       "name": "frontend-boilerplate",
       "dependencies": {
+        "@headless-tree/core": "^1.2.1",
+        "@headless-tree/react": "^1.2.1",
         "@hookform/resolvers": "^5.1.1",
         "@radix-ui/react-avatar": "^1.1.10",
         "@radix-ui/react-dialog": "^1.1.14",
@@ -44,6 +47,7 @@
         "@radix-ui/react-select": "^2.2.5",
         "@radix-ui/react-separator": "^1.1.7",
         "@radix-ui/react-slot": "^1.2.3",
+        "@radix-ui/react-switch": "^1.2.5",
         "@radix-ui/react-tabs": "^1.1.12",
         "@react-router/node": "^7.5.3",
         "@react-router/serve": "^7.5.3",
@@ -352,6 +356,12 @@
     "@floating-ui/react-dom": ["@floating-ui/react-dom@2.1.4", "", { "dependencies": { "@floating-ui/dom": "^1.7.2" }, "peerDependencies": { "react": ">=16.8.0", "react-dom": ">=16.8.0" } }, "sha512-JbbpPhp38UmXDDAu60RJmbeme37Jbgsm7NrHGgzYYFKmblzRUh6Pa641dII6LsjwF4XlScDrde2UAzDo/b9KPw=="],
 
     "@floating-ui/utils": ["@floating-ui/utils@0.2.10", "", {}, "sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ=="],
+
+    "@guialves/tuple": ["@guialves/tuple@1.0.0", "", {}, "sha512-2yiZ9zPtNvP08OM7aexFATpLRQJ9XJDhZiJ3UInY3Nw/Y/Me8RlUwAZdFpgrMFY1gZC+/BZfO8CZnNzMCK7PaQ=="],
+
+    "@headless-tree/core": ["@headless-tree/core@1.2.1", "", {}, "sha512-4sVCtZGIqDml6mnOW+EStb1Iu37yxn3Rbv0IN6+dV6QBKSg4qh+oQwUWwD0dfxWpqTjVBKqgXPY/f+Jsui+xFQ=="],
+
+    "@headless-tree/react": ["@headless-tree/react@1.2.1", "", { "peerDependencies": { "@headless-tree/core": "*", "react": "*", "react-dom": "*" } }, "sha512-n86JzNwQ9Tkabee8JxUuzUftPCuIWYvfFyqAc+W0p00TG10e+W2VjUR8BIMK6jwYlo4K8vBnIpW17FSC/wZkkQ=="],
 
     "@hexagon/base64": ["@hexagon/base64@1.1.28", "", {}, "sha512-lhqDEAvWixy3bZ+UOYbPwUbBkwBq5C1LAJ/xPC8Oi+lL54oyakv/npbA0aU2hgCsx/1NUd4IBvV03+aUBWxerw=="],
 
